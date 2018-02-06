@@ -74,6 +74,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="在路上" type="application/atom+xml" />
+
 
 
 
@@ -267,7 +269,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="南边">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.JPG">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -370,6 +372,22 @@
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/06/初识Apache-Ranger/" rel="prev" title="初识Apache Ranger">
+                初识Apache Ranger <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
       
@@ -431,6 +449,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.JPG"
+                alt="南边" />
+            
               <p class="site-author-name" itemprop="name">南边</p>
               <p class="site-description motion-element" itemprop="description">学无止境，只争朝夕</p>
           </div>
@@ -442,18 +464,43 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -461,12 +508,14 @@
                 
                   <span class="links-of-author-item">
                     <a href="http://www.cnblogs.com/qiuyuesu/" target="_blank" title="博客园">
-                      博客园</a>
+                      
+                        <i class="fa fa-fw fa-globe"></i>博客园</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/u/2964376051?refer_flag=1001030102_&is_hot=1" target="_blank" title="微博">
-                      微博</a>
+                      
+                        <i class="fa fa-fw fa-globe"></i>微博</a>
                   </span>
                 
             </div>
@@ -513,7 +562,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -521,7 +572,6 @@
 
   
 </div>
-
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -805,5 +855,11 @@
 
   
 
-</body>
+
+ <!-- 页面背景动画 -->
+  <script type="text/javascript" src="/js/src/canvas-nest.min.js"></script>
+<!-- 页面点击小红心 -->
+    <script type="text/javascript" src="/js/src/love.js"></script>
+
+  </body>
 </html>

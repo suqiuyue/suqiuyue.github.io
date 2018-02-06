@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Apache Ranger," />
 
 
 
@@ -81,16 +81,21 @@
 
 
 
-<meta name="description" content="学无止境，只争朝夕">
-<meta property="og:type" content="website">
-<meta property="og:title" content="在路上">
-<meta property="og:url" content="http://suqiuyue.top/archives/2018/index.html">
+<meta name="description" content="1. 介绍&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Apache Ranger是Hadoop平台上集中式的安全管理框架，为企业核心安全认证、授权、审计以及数据保护提供了一个安全策略管理中心。Apache Ranger 的主要功能是为Hadoop生态圈组件提供细粒度的访问控制，它还具有如下功能：  统一的管理界面，包括安全管理员管理、策略管理、日志审计、Ranger KMS管理、插件管">
+<meta name="keywords" content="Apache Ranger">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识Apache Ranger">
+<meta property="og:url" content="http://suqiuyue.top/2018/02/06/初识Apache-Ranger/index.html">
 <meta property="og:site_name" content="在路上">
-<meta property="og:description" content="学无止境，只争朝夕">
+<meta property="og:description" content="1. 介绍&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Apache Ranger是Hadoop平台上集中式的安全管理框架，为企业核心安全认证、授权、审计以及数据保护提供了一个安全策略管理中心。Apache Ranger 的主要功能是为Hadoop生态圈组件提供细粒度的访问控制，它还具有如下功能：  统一的管理界面，包括安全管理员管理、策略管理、日志审计、Ranger KMS管理、插件管">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://suqiuyue.top/images/ranger_architecture.png">
+<meta property="og:image" content="http://suqiuyue.top/images/ranger_principle.png">
+<meta property="og:updated_time" content="2018-02-06T08:22:33.760Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在路上">
-<meta name="twitter:description" content="学无止境，只争朝夕">
+<meta name="twitter:title" content="初识Apache Ranger">
+<meta name="twitter:description" content="1. 介绍&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Apache Ranger是Hadoop平台上集中式的安全管理框架，为企业核心安全认证、授权、审计以及数据保护提供了一个安全策略管理中心。Apache Ranger 的主要功能是为Hadoop生态圈组件提供细粒度的访问控制，它还具有如下功能：  统一的管理界面，包括安全管理员管理、策略管理、日志审计、Ranger KMS管理、插件管">
+<meta name="twitter:image" content="http://suqiuyue.top/images/ranger_architecture.png">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://suqiuyue.top/archives/2018/"/>
+  <link rel="canonical" href="http://suqiuyue.top/2018/02/06/初识Apache-Ranger/"/>
 
 
 
 
 
-  <title>归档 | 在路上</title>
+  <title>初识Apache Ranger | 在路上</title>
   
 
 
@@ -145,7 +150,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,111 +254,200 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://suqiuyue.top/2018/02/06/初识Apache-Ranger/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="南边">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="在路上">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/06/初识Apache-Ranger/" itemprop="url">
-              
-                <span itemprop="name">初识Apache Ranger</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">初识Apache Ranger</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-06T17:55:00+06:00"
-              content="2018-02-06" >
-          02-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T19:55:00+08:00">
+                2018-02-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hadoop/" itemprop="url" rel="index">
+                    <span itemprop="name">Hadoop</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/06/初识Apache-Ranger/" class="leancloud_visitors" data-flag-title="初识Apache Ranger">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/06/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-06T08:50:14+06:00"
-              content="2018-02-06" >
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; Apache Ranger是Hadoop平台上集中式的安全管理框架，为企业核心安全认证、授权、审计以及数据保护提供了一个安全策略管理中心。Apache Ranger 的主要功能是为Hadoop生态圈组件提供细粒度的访问控制，它还具有如下功能：<br></p>
+<ul>
+<li>统一的管理界面，包括安全管理员管理、策略管理、日志审计、Ranger KMS管理、插件管理等；</li>
+<li>基于策略的访问控制模型；</li>
+<li>通用的策略同步与决策逻辑，方便插件的扩展；</li>
+<li>通用的安全管理员访问日志审计逻辑，可定义的日志存储范围，如HDFS、Solr等；</li>
+<li>支持用户和LDAP、Unix系统的用户同步；</li>
+<li>支持对HDFS、Hive、HBase、Strom、YARN、Knox、Kafka等Hadoop生态圈组件的权限管控和审计。<br><br><img src="/images/ranger_architecture.png" width="50%" height="50%" align="center/"></li>
+</ul>
+<h3 id="2-组成"><a href="#2-组成" class="headerlink" title="2. 组成"></a>2. 组成</h3><p>&nbsp; &nbsp; &nbsp; &nbsp;Apache Ranger的组成结构主要由以下三个模块组成：</p>
+<ul>
+<li><strong>Ranger admin</strong>：提供了安全管理员安全管理的web界面。安全管理员可以创建和更新策略文件，并将其存储在策略数据库中。每个组件内的插件刷新器定期查询这些策略文件。该门户还包括发送HDFS中或在关系数据库中从插件收集存储审计数据的审计服务器。</li>
+<li><strong>Ranger plugins</strong>：插件是轻量级的java程序，其嵌入在需要安全控制的组件进程中。它提供了两种功能：一是从Ranger admin端拉取安全管理员配置的安全策略到本地。当安全管理员提出访问请求时，根据安全策略判断该用户是否有权限访问；二是从本地将用户访问的记录返回给Ranger服务进行审计。</li>
+<li><strong>User group sync</strong>：提供从Unix、LDAP/AD拉取用户和用户组的功能，同步的用户和用户组能够展示在Ranger admin的web界面中。<br></li>
+</ul>
+<h3 id="3-实现原理"><a href="#3-实现原理" class="headerlink" title="3. 实现原理"></a>3. 实现原理</h3><p>&nbsp; &nbsp; &nbsp; &nbsp;Apache Ranger 这个集中式的安全框架集成了认证、授权、审计的功能，各功能的实现介绍如下。<br></p>
+<ol>
+<li>认证<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Ranger 支持使用Unix、File和LDAP/AD管理用户、用户组信息，Ranger Usersync提供了用户同步功能。</li>
+<li>授权<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Ranger 采用Web UI界面提供了安全管理员可视化地管理授权策略，由Ranger Admin响应web端的请求，并将策略存储在数据库中。Ranger以插件的形式集成到Hadoop组件当中，当组件启动时，相应的ranger插件也随之初始化，从Ranger Admin拉取策略保存到本地，以便对用户访问请求进行判定。<br><br><img src="/images/ranger_principle.png" width="50%" height="50%" align="center/"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Ranger使用了基于策略的访问控制模型，安全管理员可以通过操作授权策略对用户的访问权限进行管理。策略分为两种类型：基于资源的策略和基于标签的策略。基于标签的策略，直接将资源以标签名的形式授权给用户，进一步保证了数据的安全。这里标签可以使用文件和Apache Atlas来管理，Atlas提供了将HDFS、Hive等资源分类标记的功能。Ranger Tagsync提供了与标签管理工具中标签同步功能。</li>
+<li>审计<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Ranger审计对用户访问数据、安全管理员操作策略和服务、安全管理员登录web UI、以及插件的状态这几方面进行了实时的记录。在Ranger 0.6版本以后，只支持将访问日志保存在HDFS文件和Solr中。其中Ranger集成Solr，可以在Ranger web页面上对审计日志进行搜索查询。</li>
+</ol>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Apache-Ranger/" rel="tag"># Apache Ranger</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/06/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -361,6 +455,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -381,8 +479,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -469,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-number">1.</span> <span class="nav-text">1. 介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-组成"><span class="nav-number">2.</span> <span class="nav-text">2. 组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-实现原理"><span class="nav-number">3.</span> <span class="nav-text">3. 实现原理</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -603,6 +726,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
