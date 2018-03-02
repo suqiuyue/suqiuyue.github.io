@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 南边
-subtitle: 学无止境，只争朝夕
-description:
-author: Su Qiuyue
+title: 在路上
+subtitle: 
+description: 学无止境，只争朝夕
+author: 南边
 language: zh-Hans
 timezone: Asia/Urumqi
 
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -71,6 +71,7 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+Plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
 theme: next
 
